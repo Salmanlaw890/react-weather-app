@@ -1,13 +1,26 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+
+/* src/WeatherApp.css */
+.weather-app {
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+    background-color: #b4acd0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+    width: 60%;
+    height: 60%;
+    margin-top: 40px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.weather-info {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 80px;
 }
+
+@tailwind utilities;
